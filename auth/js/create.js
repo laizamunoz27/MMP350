@@ -1,18 +1,18 @@
-const loginEmail = document.getElementById("login-email");
-const loginPassword = js.getEl("login-password");
-const loginButton = js.getEl("login-button");
-const loginMessage = js.getEl("login-message");
-const userName= js.getEl("user-name");
+const signUpUserName = js.getEl("sign-up-username");
+const signUpEmail = js.getEl("sign-up-email");
+const signUpPassword = js.getEl("sign-up-password");
+const signUpButton = js.getEl("sign-up-button");
+const signUpMessage = js.getEl("sign-up-message");
 
 
-
-loginButton.onclick = function() {
-	fb.login(loginEmail.value, loginPassword.value);
+signUpButton.onclick = function() {
+	fb.create(signUpUserName.value, signUpEmail.value, signUpPassword.value);
 };
 
 function onError(errorMessage) {
-	loginMessage.textContent = errorMessage;
+	signUpMessage.textContent = errorMessage;
 }
-function useerLoggedIn(uid, displayNmae) {
-	
+
+function userLoggedIn(uid, displayName) {
+	userName.textContent = "Welcome " + displayName;
 }
