@@ -1,0 +1,46 @@
+/*
+	font pairing 3
+	font-family: 'Slabo 27px', serif;
+font-family: 'Roboto', sans-serif;
+*/
+.post,
+input {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h1,
+button,
+a,
+.post-date {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+button {
+	font-size: 1.125em;
+}
+
+
+.post {
+	line-height: 1.2;
+}
+
+.post-text {
+	font-size: 1.25em;
+}
+
+.post-info {
+	color: gray;
+}
+
+.post-author {
+	font-size: 15px;
+	/*color: darkblue;*/
+}
+
+.post-author strong {
+	color: darkblue;
+}
+
+.post-date {
+	font-size: 12px;
+}

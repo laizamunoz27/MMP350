@@ -1,0 +1,47 @@
+/*
+	font pairing 1
+	font-family: 'Open Sans', sans-serif;
+font-family: 'Passion One', cursive;
+*/
+
+.post,
+input {
+	font-family: 'Passion One', cursive;
+}
+
+h1,
+button,
+a,
+.post-date {
+	font-family: 'Open Sans', sans-serif;
+}
+
+button {
+	font-size: 1.125em;
+}
+
+
+.post {
+	line-height: 1.2;
+}
+
+.post-text {
+	font-size: 1.25em;
+}
+
+.post-info {
+	color: gray;
+}
+
+.post-author {
+	font-size: 15px;
+	/*color: darkblue;*/
+}
+
+.post-author strong {
+	color: darkblue;
+}
+
+.post-date {
+	font-size: 12px;
+}
