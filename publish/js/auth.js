@@ -9,8 +9,6 @@ loginButton.onclick = function() {
 	fb.login(loginEmail.value, loginPassword.value);
 };
 
-
-// adds login for hitting enter
 loginPassword.addEventListener('keyup', function(event) {
 	if (event.which == 13) {
 		fb.login(loginEmail.value, loginPassword.value);
