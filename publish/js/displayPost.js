@@ -1,24 +1,23 @@
-  
-// container of all posts
 const posts = js.getEl('posts');
 
-function createPost(postData, userInfo, postId) {
 
-	// container of invidual post
-	const post = js.createEl('div', 'post');
-	
-	// posts in reverse chronological order
-	posts.insertBefore(post, posts.firstElementChild);
-
-	// add posts in chronological
-	//  posts.appendChild(post);
-	
-	const text = js.createEl('div', 'post-text', postData.text);
-	post.appendChild(text);
-
-	// post info 
-
-	// author userInfo.displayName
-	// date js.formatDate(postData.date) 
-	
+function createPost(postData, userInfo, postId, postDate, postAuhtor){
+    const post = js.createEl('div', 'post');
+    
+    posts.insertBefore(post, posts.firstElementChild);
+    
+    const text = js.createEl('div', 'post-text', postData.text);
+    post.appendChild(text);
+    
+    const postInfo = js.createEl('div' , 'post-info');
+    post.appendChild(postInfo);
+    
+    const author = js.createEl('div', 'post-author' , userInfo.displayName);
+    postInfo.appendChild(author);
+    
+    const date = js.createEl('div', 'post-date', js.formatDate(postData.date));
+    
+    postInfo.appendChild(date);
+   
+    console.log(date);
 }
