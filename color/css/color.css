@@ -1,6 +1,3 @@
-/* custom properties */
-
-/* root is the top most element of the html page */
 :root {
 	* monochomatic blue color scheme 
 	--main-color: #DEE9FC;
@@ -23,9 +20,9 @@
 	--accent-one: calc(var(--main-hue) + 120);
 	--accent-two: calc(var(--main-hue) - 120);
 
-	--main-color: hsl(var(--main-hue), 50%, 70%);
-	--accent-color: hsl(var(--accent-one), 50%, 40%);
-	--placeholder-color: hsl(var(--accent-two), 20%, 50%);
+	--main-color: hsl(var(--main-hue), 40%, 70%);
+	--accent-color: hsl(var(--accent-one), 70%, 40%);
+	--placeholder-color: hsl(var(--accent-two), 30%, 50%);
 }
 
 :root {
@@ -85,3 +82,4 @@ a:hover {
 #title {
 	color: var(--accent-color);
 }
+
