@@ -1,6 +1,8 @@
 * {
 	box-sizing: border-box;
 }
+
+/* reset UI styles */
 button, input {
 	font: inherit;
 	background: none;

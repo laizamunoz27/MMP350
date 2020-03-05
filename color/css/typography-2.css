@@ -1,13 +1,19 @@
+/*
+	font pairing 2
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
 .post,
 input {
-	font-family: 'Passion One', cursive;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 h1,
 button,
 a,
 .post-date {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 button {

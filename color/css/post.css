@@ -1,0 +1,24 @@
+.post {
+	border: 1px solid gray;
+	border-radius: 0.25em;
+	padding: 1em;
+	margin-top: 1em;
+}
+
+.post-text {
+font-family: 'Passion One', cursive;
+
+}
+
+.post-author {
+	font-family: 'Passion One', cursive;
+
+
+}
+
+.post-date {
+	font-family: 'Passion One', cursive;
+
+}
+
+
