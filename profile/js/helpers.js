@@ -63,11 +63,11 @@ fb.loadPost = function(id) {
 fb.getUserProfile = function(uid) {
 	firebase.database().ref('users').child(uid).on('value', user => {
 		if (typeof displayProfile === "function") 
-			displayProfile(user.val().displayName, user.val().bio, user.val().imageURL);
+			displayProfile(user.val().displayName, user.val());
 	});
 };
 
-fb.updateProfile = function(id, key, value) {
+fb.updateProfile = function(uid, key, value) {
 	const info = {};
 	info[key] = value;
 	firebase.database().ref('users').child(uid).update(info);
@@ -139,6 +139,8 @@ firebase.auth().onAuthStateChanged(user => {
 			const userInfo = snapshot.val();
 			if (typeof userLoggedIn === 'function') 
 				userLoggedIn(user.uid, userInfo.displayName, userInfo.imageURL);
+			if (typeof profileLoggedIn === 'function') 
+				profileLoggedIn(user.uid);
 		});	
 	} else {
 		if (typeof noUser === 'function') noUser();

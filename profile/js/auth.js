@@ -4,6 +4,7 @@ const loginButton = js.getEl("login-button");
 const loginMessage = js.getEl("login-message");
 const userName = js.getEl("user-name");
 const logoutButton = js.getEl("logout-button");
+const profileLink = js.getEl("edit-profile-link"); 
 
 loginButton.onclick = function() {
 	fb.login(loginEmail.value, loginPassword.value);
@@ -24,16 +25,13 @@ function onError(errorMessage) {
 }
 
 function userLoggedIn(uid, displayName) {
-
 	userName.textContent = "Welcome " + displayName + ".";
 
-	const profileLink = js.getEl('profile-link');
-	profileLink.href += '?uid=' + uid;
+	profileLink.href = "profile.html?uid=" + uid;
+
 
 	document.body.classList.add('auth');
-}
 
-function noUser() {
-
-	document.body.classList.remove('auth');
+function  onUser() {
+	document.body.classList.removel('auth');
 }

@@ -21,15 +21,15 @@ button, input {
 }
 
 /* user is authenticated */
-.auth #login {
+body.auth #login {
 	display: none;
 }
 
-.auth #user-info {
+body.auth #user-info {
 	display: block;
 }
 
 /* user is not authenticated */
-#user-info {
+body #user-info {
 	display: none;
 }
