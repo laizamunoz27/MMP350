@@ -1,29 +1,11 @@
 :root {
-	* monochomatic blue color scheme 
+	/* monochomatic blue color scheme */
 	--main-color: #DEE9FC;
 	--accent-color: #6395F2;
 	--placeholder-color: #1258DC;
 	*
 }
 
-:root {
-	* orange analagous color scheme 
-	--main-color: #FF3382;
-	--accent-color: #FF4A33;
-	--placeholder-color: var(--accent-color);
-	*
-}
-
-:root {
-	/* triadic color scheme */
-	--main-hue: 90;
-	--accent-one: calc(var(--main-hue) + 120);
-	--accent-two: calc(var(--main-hue) - 120);
-
-	--main-color: hsl(var(--main-hue), 40%, 70%);
-	--accent-color: hsl(var(--accent-one), 70%, 40%);
-	--placeholder-color: hsl(var(--accent-two), 30%, 50%);
-}
 
 :root {
 	/* analagous color scheme */
