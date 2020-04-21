@@ -27,7 +27,8 @@ function createPost(postData, userInfo, postId, postDate, postAuhtor){
     const userImage - js.createEl( 'img', 'post-profile-image');
     if (userInfo.ImageURL) {
         uderImage.src = userInfo.imageURL;
-         userImage.src ='img/ball.jpg';
+    } else{
+        userImage.src ='img/ball.jpg';
 
     }
     post.appendChild(userImage);

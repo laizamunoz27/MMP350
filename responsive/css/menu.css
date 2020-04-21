@@ -1,0 +1,45 @@
+#user-info,
+#login{
+	display:flex;
+	justify-content: space-around;
+	align-items: stretch;
+	flex-wrap: wrap;
+
+
+}
+#user-info p.
+#login p{
+	margin: 0;
+}
+#user-name {
+	font-size: 1.5em;
+}
+#logout-button,
+#login-email {
+	margin-left: auto;
+}
+#login-message{
+	flex-basis:100%;
+	text-align: center;
+}
+
+
+#login-email,
+#login-passowrd{
+	margin-right: 0.5em;
+}
+
+#create-link{
+	align-self: center;
+}
+
+#create-link a{
+	font-size: 1em;
+
+}
+#ediit-profile-link {
+	align-self: center;
+	margin-left: 1em;
+	font-size: 1em;
+
+}

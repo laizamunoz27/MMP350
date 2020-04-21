@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+button, input {
+	font: inherit;
+	background: none;
+	border: none;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 3px 6px;
+	line-height: 1;
+	vertical-align: middle;
+}
+
+#container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+#user-info {
+	margin-bottom: 1em;
+}
+
+/* user is authenticated */
+body.auth #login {
+	display: none;
+}
+
+body.auth #user-info {
+	display: block;
+}
+
+body.auth #profile-iamge-input,
+body.auth #update-profile-image{
+	display: block;
+}
+body.auth #user-info{
+	display: flex;
+	}
+/* user is not authenticated */
+body #user-info {
+	display: none;
+}
+#profile-image-input,
+#update-profile-image,
+body #user-info {
+	display: none;
+}
