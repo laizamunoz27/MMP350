@@ -1,0 +1,36 @@
+.post {
+	border: 1px solid gray;
+	border-radius: 0.25em;
+	padding: 1em;
+	margin-top: 1em;
+	position: relative;
+	height: 120px;
+}
+
+.post-text {
+font-family: 'Passion One', cursive;
+
+}
+
+.post-author {
+	font-family: 'Passion One', cursive;
+
+
+}
+
+.post-date {
+	font-family: 'Passion One', cursive;
+
+}
+.post-profile-image{
+	width:100px;
+	height:100px;
+	object-fit: cover;
+	border-radius:100px;
+
+	position: absolute;
+	right: 3px;
+	top: 3px;
+
+}
+
